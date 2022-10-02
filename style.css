@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  #flex {
+    display: flex;
+    flex-direction: row-reverse; 
+  }
+  
+  .artInfo, .artImage {
+    flex: 1;
+  }
