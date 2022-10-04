@@ -10,3 +10,8 @@ html {
   .artInfo, .artImage {
     flex: 1;
   }
+
+  .hidden {
+    display: none;
+  }
+
