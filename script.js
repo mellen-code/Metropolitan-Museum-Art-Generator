@@ -2,7 +2,7 @@
   // 
   // Favorites are listed in the DOM, along with art info PLUS Department & Met url.
   // Favorites are kept in localStorage for next session.
-  // Style the page - custom background for each dept.
+  // Style the page - custom background for each dept (including 'Go to Favorites' button)
     
 
 
@@ -90,5 +90,5 @@
 
 
   function addToFav() {
-    console.log('It works!!')
+    
   }
