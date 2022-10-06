@@ -1,6 +1,5 @@
 // TO DO:
   // 
-  // Get 'any' choice to return proper departmentID value.
   // Favorites are listed in the DOM, along with art info PLUS Department & Met url.
   // Favorites are kept in localStorage for next session.
   // Style the page - custom background for each dept.
@@ -12,18 +11,19 @@
   document.querySelector('.favoriteButton').addEventListener('click', addToFav);
   
   function showArt() {
+  // Pull departmentID; dept chosen randomly if user selects 'any'.
     let departmentID = document.querySelector('select').value;
 
-    if (departmentID == 'random') {
-      let departmentID = (Math.ceil(Math.random()*21));
-
-      if (departmentID == '2' || departmentID == '20') {
-        let departmentID = '7';
-      }
-    } else {
-    let departmentID = document.querySelector('select').value;
+      function randomPick() {
+        if (departmentID === '0') {
+          departmentID = Number(Math.ceil(Math.random()*21));
+          console.log(departmentID)
+        }
+          if (departmentID === 2 || departmentID === 20)
+            departmentID += 1;
     }
 
+      randomPick();
 
     console.log(departmentID)
 
