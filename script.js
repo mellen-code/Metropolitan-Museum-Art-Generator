@@ -75,105 +75,7 @@
                         
                         displayFavorite();
 
-<<<<<<< Updated upstream
 
-// When fav button is clicked, art info is stored in localStorage:
-document.querySelector('.favoriteButton').addEventListener('click', addToFav);
-
-function addToFav() {
-  if(!localStorage.getItem('link') && !localStorage.getItem('image')) {
-
-    localStorage.setItem('image', data.primaryImageSmall);
-
-    localStorage.setItem('title', document.querySelector('h3').innerText);
-
-    localStorage.setItem('artist', data.artistAlphaSort);
-
-    localStorage.setItem('link', data.objectURL);
-  }
-  
-  else if (localStorage.getItem('link') || localStorage.getItem('image')){
-    addToFav2();
-  };
-  }
-
-function addToFav2() {
-  if(!localStorage.getItem('link2') && !localStorage.getItem('image2')) {
-
-    localStorage.setItem('image2', data.primaryImageSmall);
-  
-    localStorage.setItem('title2', document.querySelector('h3').innerText);
-
-    localStorage.setItem('artist2', data.artistAlphaSort);
-
-    localStorage.setItem('link2', data.objectURL);
-  }
-    
-  else if (localStorage.getItem('link2') || localStorage.getItem('image2')){
-    addToFav3();
-  };
-  }
-
-  function addToFav3() {
-    if(!localStorage.getItem('link3') && !localStorage.getItem('image3')) {
-
-      localStorage.setItem('image3', data.primaryImageSmall);
-    
-      localStorage.setItem('title3', document.querySelector('h3').innerText);
-
-      localStorage.setItem('artist3', data.artistAlphaSort);
-
-      localStorage.setItem('link3', data.objectURL);
-    }
-      
-    else if (localStorage.getItem('link3') || localStorage.getItem('image3')){
-      addToFav4();
-      
-    };
-    }
-
-  function addToFav4() {
-    if(!localStorage.getItem('link4') && !localStorage.getItem('image4')) {
-
-      localStorage.setItem('image4', data.primaryImageSmall);
-      
-      localStorage.setItem('title4', document.querySelector('h3').innerText);
-
-      localStorage.setItem('artist4', data.artistAlphaSort);
-
-      localStorage.setItem('link4', data.objectURL);
-    }
-        
-    else if (localStorage.getItem('link4') || localStorage.getItem('image4')){
-      addToFav5();
-    };
-    }
-
-    function addToFav5() {
-      if(!localStorage.getItem('link5') && !localStorage.getItem('image5')) {
-
-        localStorage.setItem('image5', data.primaryImageSmall);
-        
-        localStorage.setItem('title5', document.querySelector('h3').innerText);
-
-        localStorage.setItem('artist5', data.artistAlphaSort);
-
-        localStorage.setItem('link5', data.objectURL);
-      }
-          
-      else if (localStorage.getItem('link5') || localStorage.getItem('image5')){
-        console.log("Favorites are Full")
-      };
-      }
-
-
-  
-
-// Testing if localStorage can be used to keep info in the DOM. At this point, it doesn't save between browser sessions:
-  document.querySelector('#title').innerText = localStorage.getItem('title')
-
-}
-=======
 // When fav button is clicked, art info is stored in localStorage:
                         document.querySelector('.favoriteButton').addEventListener('click', addToFav);
 
@@ -270,7 +172,7 @@ function addToFav2() {
                           document.querySelector('#title').innerText = localStorage.getItem('title')
 
                         }
->>>>>>> Stashed changes
+
                       
                     )
             
@@ -285,15 +187,4 @@ function addToFav2() {
             .catch(err => {
               console.log(`error ${err}`)
           });
-
-  };
-
-<<<<<<< Updated upstream
-=======
-  //  store indicated favorite in localStorage       
-
-  
-
-
-  
->>>>>>> Stashed changes
+        };
