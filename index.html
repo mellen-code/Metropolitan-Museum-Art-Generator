@@ -3,13 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Met Museum Art Generator</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Faustina:wght@600&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <h1>A Virtual Taste of The Met Museum</h1>
+  <div id="background">
+    <div id="heading">
+  <h1>Metropolitan Museum Art Generator</h1>
+    <div id="dropdown">
   <select name="department" id="department-select">
     <option value="">--Select a Department--</option>
     <option value="0">Any department</option>
@@ -35,67 +42,38 @@
     
     
 </select>
-	<button type="button" name="button">Show Art</button>	
+	<button type="button" name="button">View Art</button>	
+</div>
+</div>
 
   <div id="flex">
     <div class="artInfo">
-  	    <h3></h3>
-        <h4></h4>
+      <div id="bottom">
+  	    <h4 id="artTitle"></h4>
+        <h4 id="artist"></h4>
         <h5 id="date"></h5>
-        <h5 id="period"></h5>
-        <h5 id="museumURL"></h5>
-        <button type="button" name="button" class="favoriteButton hidden">Add to Favorites</button>
+        <h5 id="culture"></h5>
+        <div id="linkWrapper">
+          <h5 id="museumLink"></h5>
+          <a href="" id="linkURL" target="_blank"></a>
+        </div>
+        </div>
+        </div>
         
+     
+  
+    <div class="frame">
+      <div class="mat">
+        <div class="art">
+  		    <img src="" alt="" id="picOfArt">
+          <h3 id="noImage"></h3>
+        </div>
+      </div>
     </div>
-  
-    <div class="artImage">
-  		<img src="" alt="">
-      <h3 id="noImage"></h3>
+
+      </div> 
     </div>
-  </div>
-
-  <h2>Favorites</h2>
-  <div id="favorites">
-      <h4>Image</h4>
-      <h4>Title</h4>
-      <h4>Artist</h4>
-      <h4>Link to full info</h4>
-  
-      <h5>image goes here</h5>
-      <h5 id="title">Capital</h5>
-      <h5>unknown</h5>
-      <h5>https://www.metmuseum.org/art/collection/search/470818</h5>
-    
-
-      <h5>image goes here</h5>
-      <h5>Capital</h5>
-      <h5>unknown</h5>
-      <h5>https://www.metmuseum.org/art/collection/search/470818</h5>
-    
-
-      <h5>image goes here</h5>
-      <h5>Capital</h5>
-      <h5>unknown</h5>
-      <h5>https://www.metmuseum.org/art/collection/search/470818</h5>
-  
-
-      <h5>image goes here</h5>
-      <h5>Capital</h5>
-      <h5>unknown</h5>
-      <h5>https://www.metmuseum.org/art/collection/search/470818</h5>
-    
-    
-  </div>
-
-  
-
-
-  
-	
-  
-  <script src="script.js"></script>
-
  
+<script src="script.js"></script>
 </body>
-
 </html>
