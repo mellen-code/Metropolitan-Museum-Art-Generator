@@ -1,7 +1,7 @@
 // TO DO:
-  // // FINISH: Store what's in the DOM to store MULTIPLE favorites in localStorage for next session (see title). Plus complete for the remaining 3 favorite slots.
+  // First 5 Favorites art info is saved in LocalStorage - got it! But in 5 separate functions. Tried to consolidate them into 1 function, edits starting on line 80.
 
-  // The same MULTIPLE Favorites are saved in the DOM, along with art info.
+  // The info is saved in the DOM
   
   // Style the page - custom background for each dept (including 'Go to Favorites' button)
     
@@ -91,10 +91,11 @@
                             localStorage.setItem('link', data.objectURL);
                           }
                           
-                          else if (localStorage.getItem('link') || localStorage.getItem('image')){
+                          else {
                             addToFav2();
                           };
                           }
+                       
 
                         function addToFav2() {
                           if(!localStorage.getItem('link2') && !localStorage.getItem('image2')) {
@@ -108,7 +109,7 @@
                             localStorage.setItem('link2', data.objectURL);
                           }
                             
-                          else if (localStorage.getItem('link2') || localStorage.getItem('image2')){
+                          else {
                             addToFav3();
                           };
                           }
@@ -125,7 +126,7 @@
                               localStorage.setItem('link3', data.objectURL);
                             }
                               
-                            else if (localStorage.getItem('link3') || localStorage.getItem('image3')){
+                            else {
                               addToFav4();
                               
                             };
@@ -143,7 +144,7 @@
                               localStorage.setItem('link4', data.objectURL);
                             }
                                 
-                            else if (localStorage.getItem('link4') || localStorage.getItem('image4')){
+                            else {
                               addToFav5();
                             };
                             }
@@ -160,7 +161,7 @@
                                 localStorage.setItem('link5', data.objectURL);
                               }
                                   
-                              else if (localStorage.getItem('link5') || localStorage.getItem('image5')){
+                              else {
                                 console.log("Favorites are Full")
                               };
                               }
