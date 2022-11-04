@@ -1,6 +1,6 @@
-# The Met Museum Art Generator: <a href="https://artgenerator-themetmuseum.netlify.app/" target="_blank">Visit Here</a>
+# The Metropolitan Museum of Art Generator: <a href="https://artgenerator-themetmuseum.netlify.app/" target="_blank">Visit Here</a>
 <a href="https://artgenerator-themetmuseum.netlify.app/" target="_blank">
-<img src="https://media.giphy.com/media/34Q93NLtrowY8XXazg/giphy.gif" width="100%" alt="link to The Met Museum Art Generator"/>
+<img src="https://media.giphy.com/media/HdH82S9MPWdWmUk6eg/giphy.gif" width="80%" alt="link to The Met Museum Art Generator"/>
 </a>
 
 Program that allows anyone to access The Metropolitan Museum of Art's extensive art collections, simply by selecting the department of your choice. 
