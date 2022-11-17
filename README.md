@@ -11,11 +11,11 @@ A piece of art and its information is displayed with every click, courtesy of th
 
 
 ## Optimizations
-One of the top optimizations is adding a feature to store a user's favorite pieces of art in the DOM. I would also work on callback scalability of the API used. Finally I would add mobile-first styling.
+One of the top optimizations is adding a feature to store a user's favorite pieces of art in the DOM. I would also like to add mobile-first styling. Finally, there is an error with the server attempting to set a cookie and it doesn't have the SameSite attribute set. Since I am working client side on this project, there isn't much I can do, however I'm keeping aware in case there is something that can be done in the future.
 
 ## Lessons Learned
 
-Utilized nested fetch methods to pull layers of information from the backend. 
+Utilized multiple fetch methods to pull layers of information from the backend, and enjoyed refactoring the nested fetches to make the code more readable.
 
 
 ## More Projects
