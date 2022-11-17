@@ -27,15 +27,10 @@ document.querySelector('button').addEventListener('click', showArt);
                   console.log(choice);
               
 
-
 // Show the selected art's picture and info in the DOM.
 
             return fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${choice}`) 
                 .then(res => res.json())
-
-                .catch(err => {
-                  console.log(`error ${err}`)
-                })
 
                 .then(data => {
                     console.log(data)
@@ -83,6 +78,10 @@ document.querySelector('button').addEventListener('click', showArt);
                     if (data.primaryImageSmall == "") {
                       document.querySelector('#noImage').innerText = "No image available"
                     }
+                  })
+
+                  .catch(err => {
+                    console.log(`error ${err}`)
                   })
                 });                     
       };
