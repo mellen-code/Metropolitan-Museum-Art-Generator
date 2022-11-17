@@ -4,6 +4,7 @@ document.querySelector('button').addEventListener('click', showArt);
   function showArt () {
     
       let departmentID = document.querySelector('select').value;
+      
 
   // Department chosen randomly if user selects 'any' 
         if (departmentID === '0') {
@@ -13,83 +14,80 @@ document.querySelector('button').addEventListener('click', showArt);
             departmentID += 1;
       
       console.log(departmentID);
-     
+
+
 
   // // Randomly select a piece of art, based on department selected. 
+
         fetch(`https://collectionapi.metmuseum.org/public/collection/v1/search?departmentId=${departmentID}&q=art`) 
               .then(res => res.json())
               .then(data => {
-                  console.log(data);
                   let choice = data.objectIDs[Math.floor(Math.random()*(data.objectIDs.length))];
-                  console.log(choice)
+                  console.log(data);
+                  console.log(choice);
               
 
 
 // Show the selected art's picture and info in the DOM.
-                fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${choice}`) 
-                    .then(res => res.json())
-                    .then(data => {
-                        console.log(data)
 
-                        document.querySelector('#artTitle').innerText = data.title;
+            return fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${choice}`) 
+                .then(res => res.json())
 
-                        if (data.title == "") {
-                          document.querySelector('#artTitle').innerText = 'Title Unknown'
-                        }
+                .catch(err => {
+                  console.log(`error ${err}`)
+                })
 
-                        document.querySelector('#artist').innerText = 'Artist: '+data.artistDisplayName
+                .then(data => {
+                    console.log(data)
 
-                        if (data.artistDisplayName == "") {
-                          document.querySelector('#artist').innerText = 'Artist Unknown'
-                        }
+                    document.querySelector('#artTitle').innerText = data.title;
 
-                        document.querySelector('#date').innerText = 'Date: '+data.objectDate
+                    if (data.title == "") {
+                      document.querySelector('#artTitle').innerText = 'Title Unknown'
+                    }
 
-                        if (data.objectDate == "") {
-                          document.querySelector('#date').innerText = "Date Unknown"
-                        }
+                    document.querySelector('#artist').innerText = 'Artist: '+data.artistDisplayName
 
-                        document.querySelector('#culture').innerText = 'Culture: ' +data.culture
+                    if (data.artistDisplayName == "") {
+                      document.querySelector('#artist').innerText = 'Artist Unknown'
+                    }
 
-                        if (data.culture == "") {
-                          document.querySelector('#culture').innerText = ""
-                        }
+                    document.querySelector('#date').innerText = 'Date: '+data.objectDate
 
-                        document.querySelector('#museumLink').innerText = 'Museum link: '
+                    if (data.objectDate == "") {
+                      document.querySelector('#date').innerText = "Date Unknown"
+                    }
 
-                        document.querySelector('a').innerText = data.objectURL
+                    document.querySelector('#culture').innerText = 'Culture: ' +data.culture
 
-                        document.querySelector('a[href]').setAttribute('href', data.objectURL)
+                    if (data.culture == "") {
+                      document.querySelector('#culture').innerText = ""
+                    }
+
+                    document.querySelector('#museumLink').innerText = 'Museum link: '
+
+                    document.querySelector('a').innerText = data.objectURL
+
+                    document.querySelector('a[href]').setAttribute('href', data.objectURL)
 
 
-                        if (data.objectURL == "") {
-                          document.querySelector('a').innerText = "Museum link unavailable"
-                        }
-                      
-                      
-                        document.querySelector('#noImage').innerText = ""
+                    if (data.objectURL == "") {
+                      document.querySelector('a').innerText = "Museum link unavailable"
+                    }
+                  
+                  
+                    document.querySelector('#noImage').innerText = ""
 
-                        document.querySelector('img').src = data.primaryImageSmall
+                    document.querySelector('img').src = data.primaryImageSmall
 
-                        if (data.primaryImageSmall == "") {
-                          document.querySelector('#noImage').innerText = "No image available"
-                        }
-
-                      })
-
-                        .catch(err => {
-                          console.log(`error ${err}`)
-                      
-                        })
-                                                
-                      .catch(err => {
-                        console.log(`error ${err}`)
-                    })
-                                               
-                        .catch(err => {
-                          console.log(`error ${err}`)
-                      })
-
+                    if (data.primaryImageSmall == "") {
+                      document.querySelector('#noImage').innerText = "No image available"
+                    }
+                  })
                 });                     
       };
                     
+
+
+
+
