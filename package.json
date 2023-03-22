@@ -1,0 +1,36 @@
+{
+  "name": "metropolitan-museum-art-generator",
+  "version": "1.0.0",
+  "description": "<a href=\"https://artgenerator-themetmuseum.netlify.app/\" target=\"_blank\">\r <img src=\"https://media.giphy.com/media/HdH82S9MPWdWmUk6eg/giphy.gif\" width=\"80%\" alt=\"link to The Met Museum Art Generator\"/>\r </a>",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.1",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "validator": "^13.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mellen-code/Metropolitan-Museum-Art-Generator.git"
+  },
+  "author": "Marie Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mellen-code/Metropolitan-Museum-Art-Generator/issues"
+  },
+  "homepage": "https://github.com/mellen-code/Metropolitan-Museum-Art-Generator#readme"
+}

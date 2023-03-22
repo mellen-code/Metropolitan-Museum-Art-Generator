@@ -1,0 +1,1 @@
+Create favs route (after signup) to fav.ejs page
