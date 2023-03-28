@@ -1,1 +1,5 @@
-Create favs route (after signup) to fav.ejs page
+DONE! Create favs route (after signup) to fav.ejs page
+
+DONE! Get API to function & display on favs.ejs page
+
+- Get Favorites section functionality via React

@@ -1,3 +1,15 @@
+module.exports = {
+    getHomePage: async (req, res) => {
+        try {
+            res.render('favs.ejs')
+        } catch (error) {
+            console.log(error)
+        }
+    }
+}
+
+
+
 // const Fav = require('../models/Fav')
 
 // module.exports = {

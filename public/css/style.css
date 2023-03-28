@@ -8,12 +8,13 @@ html {
   background-image: url('images/wall-background.jpg');
   background-size: 70%;
   height: 100vh;
+  width: 100vw;
 }
 
 #heading {
-  padding-bottom: 6vh;
-  width: 50%;
+  width: 70%;
   margin: auto;
+  padding-bottom: 6vh;
 }
 
 h1 {
@@ -40,6 +41,10 @@ h1 {
 .artInfo, .frame {
   flex: 1;
   height: 70vh;
+}
+
+.artInfo {
+  display: flex;
 }
 
 #bottom {
