@@ -11,7 +11,7 @@ A piece of art and its information is displayed with every click, courtesy of th
 
 
 ## Optimizations
-One of the top optimizations is adding a feature to store a user's favorite pieces of art in the DOM. I would also like to add mobile-first styling. Finally, there is an error with the server attempting to set a cookie and it doesn't have the SameSite attribute set. Since I am working client side on this project, there isn't much I can do, however I'm keeping aware in case there is something that can be done in the future.
+One of the top optimizations is adding a feature to keep track of a user's favorite pieces of art. I would also like to add mobile-first styling. Finally, there is an error with the server attempting to set a cookie and it doesn't have the SameSite attribute set. Since I am working client side on this project, there isn't much I can do, however I'm keeping aware in case there is something that can be done in the future.
 
 ## Lessons Learned
 
@@ -27,7 +27,7 @@ Utilized multiple fetch methods to pull layers of information from the backend, 
 <a target="_blank" href="">mariesmith.me</a>
         <br />
       <a target="_blank" href="">
-            <img src="https://media.giphy.com/media/BXLT2FUtBYmKDGl0nd/giphy.gif" width="100%"  alt="link to my portfolio site"/>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2RkY2ZjYWM5ZTc4NDAwMzQwOTJhNTQ4ZDU5MzcyMjgyYjE3ODNiMiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/eukp4n5vbKaQ1V2hNx/giphy.gif" width="100%"  alt="link to my portfolio site"/>
         </a>
     </td>
     <td width="50%" valign="top">
